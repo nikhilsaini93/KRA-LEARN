@@ -89,30 +89,30 @@ console.log(Color.Green); // "GREEN"
 //     password:"xyz"
 // }
 
-// console.log(abcde)
+// // console.log(abcde)
 
 
-// more ex 
-interface Person {
-  name: string;
-  age: number;
+// // more ex 
+// interface Person {
+//   name: string;
+//   age: number;
  
-}
+// }
 
-const john: Person = {
-  name: "John",
-  age: 30
-};
-console.log(john)
-interface Employee extends Person {
-  jobTitle: string;
-}
+// const john: Person = {
+//   name: "John",
+//   age: 30
+// };
+// console.log(john)
+// interface Employee extends Person {
+//   jobTitle: string;
+// }
 
-const jane: Employee = {
-  name: "Jane",
-  age: 28,
-  jobTitle: "Developer"
-};
+// const jane: Employee = {
+//   name: "Jane",
+//   age: 28,
+//   jobTitle: "Developer"
+// };
 
 
 

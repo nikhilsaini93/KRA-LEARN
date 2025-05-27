@@ -28,4 +28,14 @@ function foo() {
     }
     console.log(args);
 }
-foo(10, 20, 30, 40, 50);
+foo(10, 20, 30, 40, 50, 60);
+function xyze(a, b) {
+    if (typeof a === "string" && typeof b === "number") {
+        console.log(a, b);
+    }
+    else if (typeof a === "string") {
+        console.log(a);
+    }
+}
+xyze("hi"); // Outputs: hi
+xyze("hi", 20); // Outputs: hi 20
