@@ -229,15 +229,52 @@ const userAccount: UserAccount = {
 
 
 
+// extra stufff
 
 
 
 
+// Create a TypeScript program to manage information about vehicles.
+
+// Define a base class Vehicle with the following properties:
+// make (string): The manufacturer of the vehicle.
+// model (string): The model of the vehicle.
+// year (number): The manufacturing year.
+// Add a method getDetails() in the Vehicle class that returns a string in the format:
+// "Make: {make}, Model: {model}, Year: {year}".
+// Create a subclass Car that extends Vehicle with an additional property:
+// fuelType (string): The type of fuel the car uses (e.g., "Petrol", "Diesel", "Electric").
+// Override the getDetails() method in the Car class to include the fuelType information:
+// "Make: {make}, Model: {model}, Year: {year}, Fuel Type: {fuelType}".
 
 
 
+class Vehicle{
+    constructor(public manufacturer: string , public model : string , public year: number ){
 
+    }
+    getDetails() : string{
+        return `Make: ${this.manufacturer}, Model: ${this.model}, Year: ${this.year}`
+    }
 
+    
+
+}
+
+class Car extends Vehicle{
+        constructor(manufacturer: string,
+        model: string,
+        year: number,
+    public fuelType : string  ){
+        super(manufacturer, model, year);
+        }
+         getDetails(): string {
+        return `${super.getDetails()}, Fuel Type: ${this.fuelType}`;
+    }
+
+    }
+const myCar = new Car("Toyota", "Camry", 2020, "Petrol");
+console.log(myCar.getDetails())
 
 
 

@@ -1,6 +1,21 @@
 // ✅ Beginner Level
 // Basic Types
 // 1 Define variables using the following types: boolean, number, string, array, tuple, and enum.
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 // Function Typing
 // 2. Write a function that calculates the area of a rectangle. Add appropriate parameter and return types.
 // Interfaces
@@ -145,3 +160,40 @@ var userAccount = {
     username: "user123",
     password: "securepassword"
 };
+// extra stufff
+// Create a TypeScript program to manage information about vehicles.
+// Define a base class Vehicle with the following properties:
+// make (string): The manufacturer of the vehicle.
+// model (string): The model of the vehicle.
+// year (number): The manufacturing year.
+// Add a method getDetails() in the Vehicle class that returns a string in the format:
+// "Make: {make}, Model: {model}, Year: {year}".
+// Create a subclass Car that extends Vehicle with an additional property:
+// fuelType (string): The type of fuel the car uses (e.g., "Petrol", "Diesel", "Electric").
+// Override the getDetails() method in the Car class to include the fuelType information:
+// "Make: {make}, Model: {model}, Year: {year}, Fuel Type: {fuelType}".
+var Vehicle = /** @class */ (function () {
+    function Vehicle(manufacturer, model, year) {
+        this.manufacturer = manufacturer;
+        this.model = model;
+        this.year = year;
+    }
+    Vehicle.prototype.getDetails = function () {
+        return "Make: ".concat(this.manufacturer, ", Model: ").concat(this.model, ", Year: ").concat(this.year);
+    };
+    return Vehicle;
+}());
+var Car = /** @class */ (function (_super) {
+    __extends(Car, _super);
+    function Car(manufacturer, model, year, fuelType) {
+        var _this = _super.call(this, manufacturer, model, year) || this;
+        _this.fuelType = fuelType;
+        return _this;
+    }
+    Car.prototype.getDetails = function () {
+        return "".concat(_super.prototype.getDetails.call(this), ", Fuel Type: ").concat(this.fuelType);
+    };
+    return Car;
+}(Vehicle));
+var myCar = new Car("Toyota", "Camry", 2020, "Petrol");
+console.log(myCar.getDetails());
