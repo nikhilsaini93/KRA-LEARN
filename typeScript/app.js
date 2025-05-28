@@ -49,5 +49,4 @@ const employee = {
     phone: "123-456-7890",
     jobTitle: "Developer"
 };
-// Example of Combining All Concepts
-//  
+

@@ -209,8 +209,3 @@ const employee: Employee11 = {
 };
 
 
-
-
-
-// Example of Combining All Concepts
-//  

@@ -274,7 +274,7 @@ class Car extends Vehicle{
 
     }
 const myCar = new Car("Toyota", "Camry", 2020, "Petrol");
-console.log(myCar.getDetails())
+console.log(myCar.getDetails()) ////
 
 
 

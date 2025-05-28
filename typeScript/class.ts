@@ -1,10 +1,10 @@
-// class nik{
-//     constructor(public name: string , public age : number , gender: string) {
+class nik{
+    constructor(public name: string , public age : number , gender: string) {
 
-//     }
-// }
-// let p1 = new nik("Nikhil" , 28 , "Male")
-// console.log(p1)
+    }
+}
+let p1 = new nik("Nikhil" , 28 , "Male")
+console.log(p1)
 
 // // 1. Class Definition & Object Creation 
 
@@ -54,7 +54,7 @@
 
 // const acc1 = new BankAccount0(10000000 )
 // acc1.getBalance()  // allowed
-// // console.log(acc1.balance) // run perfectly but they give error in ts
+// console.log(acc1.balance) // run perfectly but they give error in ts
 
 
 
