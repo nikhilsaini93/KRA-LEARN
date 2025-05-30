@@ -226,15 +226,15 @@
 //     throw new Error("Something went wrong!");
 // }
 
-// async function run() {
-//     try {
-//         await simulateError();  // Call the function that throws an error
-//     } catch (error) {
-//         console.log("Caught an error:", error.message);
-//     }
-// }
+async function run() {
+    try {
+        await simulateError();  // Call the function that throws an error
+    } catch (error) {
+        console.log("Caught an error:", error.message);
+    }
+}
 
-// // run();
+// run();
 
 
 

@@ -36,7 +36,7 @@
 
 // function question1(){
 //     return new Promise((res , rej) => {
-//         let promise = true
+//         let promise =      true  
 //         if(promise){
 //             setTimeout(() => {
 //            res("Data Recived")
